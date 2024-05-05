@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <container>
+        <br><br><br><br><br><br>
+        <!-- <h1 class="welcome">Welcome to BalanceBoostHQ</h1> -->
+        <img src="logo/logo1.png" alt="Logo Image" width="500" height="500">
+    </container>
+
+    <section class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <article class="form__message form__message--error"></article>
+            <section class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username" required id="username" autocomplete="username">
+                <article class="form__input-error-message"></article>
+            </section>
+            <section class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password" required id="password" autocomplete="current-password">
+                <article class="form__input-error-message"></article>
+            </section>
+            <button class="form__button" type="button" id="loginbutton" onclick="login()">Continue</button>
+            <strong><p class="form__alert" id="alert"></p></strong>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Staff Relations Management. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
